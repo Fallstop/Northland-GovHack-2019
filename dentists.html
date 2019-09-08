@@ -150,7 +150,8 @@
             return function() {
                 console.log("Marker clicked", i)
                 infoWindow.setContent(
-                  "Test oisadjalskdj"
+                  "<H1>"+results[i].Company+"</h1><br>"
+                  +"<p>"+ "Phone: "+ results[i].Phone
 
                   );
                 infoWindow.open(map, marker);
