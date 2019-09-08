@@ -1,0 +1,443 @@
+eqfeed_callback ([
+  {
+    "Dentist": "Minne, Martin Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "4 Rainbow Place, Onerahi, Whangarei, 0110",
+    "Company": "AAA Dental Services Limited",
+    "Location": "2 Puriri Park Rd",
+    "Location2": "Maunu, Whangarei, 0110",
+    "Phone": "09 438 7694",
+    "Address": "2 Puriri Park Rd, Maunu, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Workman, John Dental Surgeon",
+    "Quals": "DDS",
+    "Postal": "61 Maunu Road, Whangarei, 0110",
+    "Company": "Kowhai Dental",
+    "Location": "61 Maunu Road",
+    "Location2": "Woodhill, Whangarei, 0110",
+    "Phone": "09 430 0707",
+    "Address": "61 Maunu Road, Woodhill, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Sun, Tony Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "78 Hapua Street, Remuera, Auckland, 1050",
+    "Company": "Gentle Dental Company - Gus Cameron",
+    "Location": "17 Rust Avenue",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 430 0046",
+    "Address": "17 Rust Avenue, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Lee, Jessica Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "10b Logan Place, Kamo, Whangarei, 0112",
+    "Company": "Team Dental Whangarei Limited",
+    "Location": "34 Reyburn Street",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 438 4760",
+    "Address": "34 Reyburn Street, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Kumar, Manish Dental Surgeon",
+    "Quals": "BDS, BSc",
+    "Postal": "40 Nixon Street, Kensington, Whangarei, 0112",
+    "Company": "Northland DHB Oral Health Dental Service",
+    "Location": "Whangarei Hospital",
+    "Location2": "Hospital Road, Whangarei, 0110",
+    "Phone": "0800MYTEETH",
+    "Address": "Whangarei Hospital, Hospital Road, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Gowda, Sunitha Public Health Dentist",
+    "Quals": "BDS, MComDent, MPH",
+    "Postal": "10 Kotuku Street, Maunu, Whangarei, 0110",
+    "Company": "Northland DHB",
+    "Location": "Whangarei Hospital",
+    "Location2": "Tohora House",
+    "Phone": "09 430 4101",
+    "Address": "Whangarei Hospital, Tohora House"
+  },
+  {
+    "Dentist": "Bellmann, Anke Christine Dental Surgeon",
+    "Quals": "DMD",
+    "Postal": "Gentle Dental Company-Gus Cameron, Suite 2, 17 Rust Avenue, Whangarei, 0110",
+    "Company": "Gentle Dental Company - Gus Cameron",
+    "Location": "17 Rust Avenue",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 430 0046",
+    "Address": "17 Rust Avenue, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Stamm, Stephan Malthias Dental Surgeon",
+    "Quals": "DDS",
+    "Postal": "73/71 Manganese Point Road, RD4, Whangarei, 0174",
+    "Company": "Kowhai Dental",
+    "Location": "61 Maunu Road",
+    "Location2": "Woodhill, Whangarei, 0110",
+    "Phone": "09 430 0707",
+    "Address": "61 Maunu Road, Woodhill, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Doleman, Chris Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "PO Box 279, Mangonui Post Shop, Mangonui, 0442",
+    "Company": "Whangarei Hospital",
+    "Location": "Maunu Road",
+    "Location2": "Whangarei",
+    "Phone": "09 470 0012",
+    "Address": "Maunu Road, Whangarei"
+  },
+  {
+    "Dentist": "Ting, Ivy Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "2/13 Davies Street, Kensington, Whangarei, 0112",
+    "Company": "Northland District Health Board",
+    "Location": "Whangarei Hospital",
+    "Location2": "Mauna Road, Whangarei",
+    "Phone": "09 470 0000",
+    "Address": "Whangarei Hospital, Mauna Road, Whangarei"
+  },
+  {
+    "Dentist": "Cheong, Desmond Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "120 Anzac Road, Morningside, Whangarei, 0110",
+    "Company": "Maunu Dental",
+    "Location": "19 Maunu Road",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 438 4400",
+    "Address": "19 Maunu Road, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Sharp, Arnon Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "4 Woodhall Road, Epsom, Auckland, 1023",
+    "Company": "Kensington Dental Centre",
+    "Location": "22 Kensington Ave",
+    "Location2": "Kensington, Whangarei, 0112",
+    "Phone": "09 437 0043",
+    "Address": "22 Kensington Ave, Kensington, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Bensemann, Ngareka Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "135 Marsden Point Road, Ruakaka, 0116",
+    "Company": "Kamo Dental",
+    "Location": "2 Grant Street",
+    "Location2": "Kamo, Whangarei, 0112",
+    "Phone": "09 435 1431",
+    "Address": "2 Grant Street, Kamo, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Phang, Jason Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "50 Hilltop Avenue, Morningside, Whangarei, 0110",
+    "Company": "Team Dental Whangarei Limited",
+    "Location": "34 Reyburn Street",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 438 4760",
+    "Address": "34 Reyburn Street, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Miller, Cynthia Dental Surgeon",
+    "Quals": "DMD",
+    "Postal": "61 Maunu Road, Woodhill, Whangarei, 0110",
+    "Company": "Kowhai Dental",
+    "Location": "61 Maunu Road",
+    "Location2": "Woodhill, Whangarei, 0110",
+    "Phone": "09 430 0707",
+    "Address": "61 Maunu Road, Woodhill, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Rupasinghe, Manori Dental Surgeon",
+    "Quals": "BDS, BSc, DipGrad (Psyc)",
+    "Postal": "c/- Whangarei Hospital Dental Department, Maunu Road, Whangarei, 0148",
+    "Company": "Whangarei Hospital",
+    "Location": "Maunu Road",
+    "Location2": "Whangarei",
+    "Phone": "09 470 0012",
+    "Address": "Maunu Road, Whangarei"
+  },
+  {
+    "Dentist": "Clark, Ellen Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "32 Jack Boyd Drive, RD 2, Kaiwaka, 0573",
+    "Company": "Northland District Health Board",
+    "Location": "C/- Oral Health, Whangarei Hospital",
+    "Location2": "Mauna Road, Whangarei",
+    "Phone": "09 470 0000",
+    "Address": "C/- Oral Health, Whangarei Hospital, Mauna Road, Whangarei"
+  },
+  {
+    "Dentist": "Joy, Jeffrey Dental Surgeon",
+    "Quals": "DDS",
+    "Postal": "22/71 Manganese Point Road, RD4, Whangarei, 0174",
+    "Company": "Kowhai Dental",
+    "Location": "61 Maunu Road",
+    "Location2": "Woodhill, Whangarei, 0110",
+    "Phone": "09 430 0707",
+    "Address": "61 Maunu Road, Woodhill, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Croucher, Neil Dental Surgeon",
+    "Quals": "BDS (Lon), MCCDRCPS (Glasg), FDSRCPS (Glas)",
+    "Postal": "Principal Dental Officer - Northland DHB, Oral Health Service, Private Bag 9742, Whangarei, 0148",
+    "Company": "Northland DHB Oral Health Dental Service",
+    "Location": "Whangarei Hospital",
+    "Location2": "Hospital Road, Whangarei, 0110",
+    "Phone": "0800MYTEETH",
+    "Address": "Whangarei Hospital, Hospital Road, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Van Der Walt, Dan Dental Surgeon",
+    "Quals": "B Ch.D, PDD",
+    "Postal": "2 Puriri Park Rd, Maunu, Whangarei, 0110",
+    "Company": "Waltdental Ltd",
+    "Location": "2 Puriri Park Rd",
+    "Location2": "Maunu, Whangarei, 0110",
+    "Phone": "09 438 9897",
+    "Address": "2 Puriri Park Rd, Maunu, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Cameron, Augustus Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "17 Rust Avenue, Whangarei, 0110",
+    "Company": "Gentle Dental Company - Gus Cameron",
+    "Location": "17 Rust Avenue",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 430 0046",
+    "Address": "17 Rust Avenue, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Davies-Payne, Helen Fiona Special Needs Dentist",
+    "Quals": "BDS, DPDS, MSc, MSNDRCSEd, FRACDS (SND)",
+    "Postal": "16 Rahui Road, Greenhithe, Auckland, 0632",
+    "Company": "Northland District Health Board",
+    "Location": "C/- Oral Health, Whangarei Hospital",
+    "Location2": "Mauna Road, Whangarei",
+    "Phone": "09 470 0000",
+    "Address": "C/- Oral Health, Whangarei Hospital, Mauna Road, Whangarei"
+  },
+  {
+    "Dentist": "Ho, Aidan Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "142 Bank Street, Whangarei, 0112",
+    "Company": "Big Smiles Dental",
+    "Location": "142 Bank Street",
+    "Location2": "Whangarei, 0112",
+    "Phone": "09 430 3888",
+    "Address": "142 Bank Street, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Brinkley, Teresa Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "48 Hardie Road, RD3, Whangarei, 0173",
+    "Company": "Lumino The Dentist - Smile By Design",
+    "Location": "120 Bank Street",
+    "Location2": "Whangarei, 0112",
+    "Phone": "09 438 7300",
+    "Address": "120 Bank Street, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Payne, Alan Prosthodontist",
+    "Quals": "BDS, MDent (Witw), DDSc (Otago), FCD (SA)",
+    "Postal": "Northland Prosthodontics Limited, c/- Gentle Dental - Gus Cameron, 17 Rust Avenue, Whangarei, 0110",
+    "Company": "Northland Prosthodontics Limited",
+    "Location": "c/- Gentle Dental - Gus Cameron",
+    "Location2": "17 Rust Avenue, Whangarei, 0110",
+    "Phone": "09 430 0046",
+    "Address": "c/- Gentle Dental - Gus Cameron, 17 Rust Avenue, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Johnston, Amanda Jane Dental Surgeon",
+    "Quals": "BDS, FICD",
+    "Postal": "Kamo Dental, 2 Grant Street, Kamo, Whangarei, 0112",
+    "Company": "Kamo Dental",
+    "Location": "2 Grant Street",
+    "Location2": "Kamo, Whangarei, 0112",
+    "Phone": "09 435 1431",
+    "Address": "2 Grant Street, Kamo, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Hugo, Johan Dental Surgeon",
+    "Quals": "BChD, DPDS",
+    "Postal": "22 Kensington Avenue, Kensington, Whangarei, 0112",
+    "Company": "Kensington Dental Centre",
+    "Location": "22 Kensington Ave",
+    "Location2": "Kensington, Whangarei, 0112",
+    "Phone": "09 437 0043",
+    "Address": "22 Kensington Ave, Kensington, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Stallworthy, Richard Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "19 Maunu Road, Avenues, Whangarei, 0110",
+    "Company": "Stallworthy and Associates",
+    "Location": "Maunu Dental Surgery",
+    "Location2": "19 Maunu Road, Whangarei, 0110",
+    "Phone": "09 438 4400",
+    "Address": "Maunu Dental Surgery, 19 Maunu Road, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Whillans, Andrew Dental Surgeon",
+    "Quals": "BDS, FRACDS",
+    "Postal": "PO Box 67009, Mount Eden, Auckland, 1349",
+    "Company": "Andrew W Whillans & Associates",
+    "Location": "1st Floor, The Strand",
+    "Location2": "Cameron Street, Whangarei, 0110",
+    "Phone": "09 438 2424",
+    "Address": "1st Floor, The Strand, Cameron Street, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Stallworthy, David Public Health Dentist",
+    "Quals": "BDS",
+    "Postal": "19 Maunu Road, Whangarei, 0110",
+    "Company": "Stallworthy and Associates",
+    "Location": "Maunu Dental Surgery",
+    "Location2": "19 Maunu Road, Whangarei, 0110",
+    "Phone": "09 438 4400",
+    "Address": "Maunu Dental Surgery, 19 Maunu Road, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Shepherd, Dennis Alwyn Prosthodontist",
+    "Quals": "BDS, MDent (Pros), PGDipClinDent (Perio), NZDREX",
+    "Postal": "2 Puriri Park Rd, Maunu, Whangarei, 0110",
+    "Company": "AAA Dental Services Limited",
+    "Location": "2 Puriri Park Rd",
+    "Location2": "Maunu, Whangarei, 0110",
+    "Phone": "09 438 7694",
+    "Address": "2 Puriri Park Rd, Maunu, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Segessenmann, Markus Dental Surgeon",
+    "Quals": "BDS, BSc",
+    "Postal": "2 Puriri Park Rd, Maunu, Whangarei, 0110",
+    "Company": "Dental Services",
+    "Location": "2 Puriri Park Rd",
+    "Location2": "Maunu, Whangarei, 0110",
+    "Phone": "09 438 9897",
+    "Address": "2 Puriri Park Rd, Maunu, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Ross, Matthew Dental Surgeon",
+    "Quals": "BDS, Dip Imp Dent RCSEd",
+    "Postal": "76 Three Mile Bush Road, Kamo, Whangarei, 0112",
+    "Company": "Lumino The Dentist - Smile By Design",
+    "Location": "120 Bank Street",
+    "Location2": "Whangarei, 0112",
+    "Phone": "09 438 7300",
+    "Address": "120 Bank Street, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Moore, Rachel Orthodontist",
+    "Quals": "BDS, MDS (Orthodontics)",
+    "Postal": "PO Box 537, Whangarei, 0140",
+    "Company": "Northland Orthodontics",
+    "Location": "3 Norfolk Street",
+     "Location2": "Whangarei, 0110",
+    "Phone": "09 438 1668",
+    "Address": "3 Norfolk Street, Whangarei, 0110"
+  },
+  {
+    "Dentist": "McGregor, Megan Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "8b Ngunguru Road, Glenbervie, Whangarei, 0173",
+    "Company": "Kensington Dental Centre",
+    "Location": "22 Kensington Ave",
+    "Location2": "Kensington, Whangarei, 0112",
+    "Phone": "09 437 0043",
+    "Address": "22 Kensington Ave, Kensington, Whangarei, 0112"
+  },
+  {
+    "Dentist": "McDiarmid, Malcolm Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "C/- Kamo Dental, 2 Grant Street, Kamo, 0112",
+    "Company": "Kamo Dental",
+    "Location": "2 Grant Street",
+    "Location2": "Kamo, Whangarei, 0112",
+    "Phone": "09 435 1431",
+    "Address": "2 Grant Street, Kamo, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Martin, Michelle Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "Dental Department Whangarei Hospital, PO Box 9742, Whangarei, 0148",
+    "Company": "Northland DHB Oral Health Dental Service",
+    "Location": "Whangarei Hospital",
+    "Location2": "Hospital Road, Whangarei, 0110",
+    "Phone": "0800MYTEETH",
+    "Address": "Whangarei Hospital, Hospital Road, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Johnson, Neil Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "PO Box 129, Whangarei, 0140",
+    "Company": "Neil Johnson Dental Surgery Ltd",
+    "Location": "131 Lower Dent Street",
+    "Location2": "Whangarei, 0140",
+    "Phone": "09 438 4273",
+    "Address": "131 Lower Dent Street, Whangarei, 0140"
+  },
+  {
+    "Dentist": "Hermon, Joe Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "Suite 1/17 Rust Avenue, Whangarei, 0110",
+    "Company": "The Gentle Dental Company Ltd - Whangarei",
+    "Location": "Suite One, Melville House",
+    "Location2": "17 Rust Avenue, Whangarei, 0110",
+    "Phone": "09 438 7744",
+    "Address": "Suite One, Melville House, 17 Rust Avenue, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Greenfield, Timothy Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "34/48 Reyburn Street, Whangarei, 0110",
+    "Company": "Team Dental Whangarei Limited",
+    "Location": "34 Reyburn Street",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 438 4760",
+    "Address": "34 Reyburn Street, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Dalley, Wayne Orthodontist",
+    "Quals": "BDS, Dip Pract Mgmt, MDS",
+    "Postal": "3/284 Whau Valley Road, Whangarei, 0112",
+    "Company": "Wayne H. Dalley Orthodontist",
+    "Location": "3 Norfolk Street",
+    "Location2": "Whangarei, 0110",
+    "Phone": "09 438 1668",
+    "Address": "3 Norfolk Street, Whangarei, 0110"
+  },
+  {
+    "Dentist": "Croft, Grant Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "22 Kensington Avenue, Kensington, Whangarei, 0112",
+    "Company": "Kensington Dental Centre",
+    "Location": "22 Kensington Ave",
+    "Location2": "Kensington, Whangarei, 0112",
+    "Phone": "09 437 0043",
+    "Address": "22 Kensington Ave, Kensington, Whangarei, 0112"
+  },
+  {
+    "Dentist": "Ackermann, Johan Dental Surgeon",
+    "Quals": "BChD, MSc (Odont), NZDREX",
+    "Postal": "16a Cliff Street, Onerahi, Whangarei, 0110",
+    "Company": "Community Dental Service",
+    "Location": "Dental Department",
+    "Location2": "Whangarei Hospital, Whangarei",
+    "Phone": "09 470 0012",
+    "Address": "Dental Department, Whangarei Hospital, Whangarei"
+  },
+  {
+    "Dentist": "Cohen, Asael Dental Surgeon",
+    "Quals": "BDS",
+    "Postal": "142 Bank Street, Regent, Whangarei, 0112",
+    "Company": "Smilecare Dental Studio Ltd",
+    "Location": "142 Bank Street",
+    "Location2": "Regent, Whangarei",
+    "Phone": "09 438 8181",
+    "Address": "142 Bank Street, Regent, Whangarei"
+  }
+]
+)
