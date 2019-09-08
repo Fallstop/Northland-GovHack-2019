@@ -1,4 +1,4 @@
-[
+eqfeed_callback([
   {
     "wkt_geom": "Point (174.28315420000001268 -35.73911509999999936)",
     "Dentist": "Minne, MartinǨDental Surgeon",
@@ -660,3 +660,4 @@
     "Y": -35.7194138
   }
 ]
+)
