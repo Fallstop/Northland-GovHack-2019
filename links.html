@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Required meta tags -->
@@ -15,6 +15,16 @@
 <body height="100%" width="100%">
   <div class="card text-center">
     <img src="/my-smile-logo.png" height="80px" width="256px" align="left">
+    <p style="position:absolute;right:10px;bottom:50px;">
+      <a target='_blank' href='https://www.facebook.com/share.php?u=http://mysmile.nz'>
+      <img src='https://www.matthewb.id.au/social/facebook.png' alt='Facebook' style="width:20px;height:20px;float: right;"/></a>
+
+      <a target='_blank' href='https://www.reddit.com/submit?url=http://mysmile.nz'>
+      <img src='https://www.matthewb.id.au/social/reddit.png' alt='Reddit'style="width:20px;height:20px;float: right;" /></a>
+
+      <a target='_blank' href='https://twitter.com/intent/tweet?text=&url=http://mysmile.nz'>
+      <img src='https://www.matthewb.id.au/social/twitter.png' alt='Tweet' style="width:20px;height:20px;float: right;"/></a>
+    </p>
     <div class="card-header" style="font-size: 30px;">
       <ul class="nav nav-tabs card-header-tabs" style="font-size: 15px;">
         <li class="nav-item">
@@ -29,23 +39,29 @@
         <li class="nav-item">
           <a class="nav-link active" href="links.html">Enroll Now</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dentists.html">Dentist Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="video.html">Video & Info</a>
+        </li>
       </ul>
     </div>
-    <div class="card-body">
-      <div class="form-group">
-        <label class="sr-only" for="inlineFormInputName2">Name</label>
-        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-
-      </div>
-    </div>
   </div>
 
-  <div>
-    In order to enroll for free under 18 dental care fill out the following form<br>
-    <a href="https://community.northlanddhb.org.nz/myteeth/oral-health-service-enrolment-form/" target="_blank">Dental Enrollment Form</a><br>
-    After enrolling find your nearest dental clinic for free dental care with the map below.<br>
-    <iframe src="https://www.google.com/maps/d/u/1/embed?mid=17F27ga8fl4kjhOefrNHW1TDzdTXZ_hfD" width="100%" bottom="0px" style="border: none;"></iframe>
+  <div style="margin: 20px">
+  <p>In order to enroll for free under 18 dental care fill out the following form</p>
+  <p>After enrolling find your nearest dental clinic to book a free dental appointment with the map <a href="dentists.html">Here</a></p>
   </div>
+
+  <iframe src="https://community.northlanddhb.org.nz/myteeth/oral-health-service-enrolment-form/" class="position-absolute" width="100%" height=100%" style="border: none;"></iframe>
+
+  <!--
+  <p>In order to enroll for free under 18 dental care fill out the following form</p>
+  <iframe src="https://community.northlanddhb.org.nz/myteeth/oral-health-service-enrolment-form/" width="100%" height="50%" style="border: none;"></iframe>
+  <p>After enrolling find your nearest dental clinic to book a free dental appointment with the map below.</p>
+  <iframe src="https://www.google.com/maps/d/u/1/embed?mid=17F27ga8fl4kjhOefrNHW1TDzdTXZ_hfD" width="100%" bottom="0px" style="border: none;"></iframe>
+  -->
 
   <!--Bootstrap JS imports-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
