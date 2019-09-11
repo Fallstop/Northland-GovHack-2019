@@ -25,6 +25,31 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
   </head>
   <body>
+
+<!-- Modal -->
+<div id="disclamer" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Disclaimer</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+        <p>Please do not use this visualization<br>It is for demonstration purposes only<br> <br> 
+        <i>Note: Might be buggy using Internet Explorer</i>
+      </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
   <div class="card text-center">
     <a href="index.html"><img src="/my-smile-logo.png" height="100px" width="256px" align="left"></a>
     <p style="position:absolute;right:10px;bottom:90px;">
@@ -220,6 +245,10 @@
 
     gtag('config', 'UA-64669610-14');
 </script>
-
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#disclamer').modal('show');
+    });
+</script>
   </body>
 </html>
