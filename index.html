@@ -108,6 +108,9 @@
         //   };
         // });
 		var legend = document.getElementById('legend');
+		var div = document.createElement('div');
+  		div.innerHTML = "<p>Test<br>tesdasdjasd</p>";
+  		legend.appendChild(div);
         map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
       }
 
