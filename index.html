@@ -12,7 +12,15 @@
        * element that contains the map. */
       #map {
         height: 100%;
+
       }
+      #legend {
+    	font-family: Arial, sans-serif;
+    	background: #fff;
+   	 	padding: 10px;
+	    margin: 10px;
+    	border: 3px solid #000;
+  	 }
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
@@ -65,6 +73,7 @@
   </div>
     
     <div id="map"></div> 
+    <div id="legend"><h3>Legend</h3></div>
 
     <script>
       var map;
@@ -98,7 +107,15 @@
         //     icon: getCircle(Size)
         //   };
         // });
-        
+		var legend = document.getElementById('legend');
+		for (var style in styles) {
+		  var name = style.name;
+		  var icon = style.icon;
+		  var div = document.createElement('div');
+		  div.innerHTML = '<img src="' + icon + '"> ' + name;
+		  legend.appendChild(div);
+		}
+        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
       }
 
 
