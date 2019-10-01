@@ -1,254 +1,149 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags -->
+<!doctype html>
+<html lang="en">
+      <!--This is totaly hackable, but that's not the point.
+      Just don't. This is tempory wall while we get the proper data.-->
+<head>
+
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="http://mysmile.nz/mysmile.ico" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My Smile</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>Laravel</title>
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+body{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+}
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+.navbar-brand
+{
     
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+    font-family: Raleway, sans-serif;
+    font-size: 2em !important;
+}
+
+.nav-link, .my-form, .login-form
+{
+
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
     </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
-  </head>
-  <body>
+</head>
+<body>
 
-<!-- Modal -->
-<div id="disclamer" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Smile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Disclaimer</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        
-      </div>
-      <div class="modal-body">
-        <p>Please do not use this visualization<br>It is for demonstration purposes only<br> <br> 
-        <i>Note: Might be buggy using Internet Explorer</i>
-      </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+       
+    </div>
+</nav>
+
+<main class="login-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+                <h4 align="center">Online resource for school dental awareness and enrollment.</h4>
+                <p align="center"><a href = "mailto: kevin@ngita.co.nz">Contact kevin@ngita.co.nz for the passowrd</a></p>
+                <div class="card">
+                    <div class="card-header">Login</div>
+                    <div class="card-body">
+                        <form onsubmit="return LoginForm()">
+
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                <div class="col-md-6">
+                                    <input type="password" id="password" class="form-control" name="password" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
-  </div>
-</div>
-
-  <div class="card text-center">
-    <a href="index.html"><img src="/my-smile-logo.png" height="100px" width="256px" align="left"></a>
-    <p style="position:absolute;right:10px;bottom:90px;">
-		<a target='_blank' href='https://www.facebook.com/share.php?u=http://mysmile.nz'>
-		<img src='https://www.matthewb.id.au/social/facebook.png' alt='Facebook' style="width:20px;height:20px;float: right;"/></a>
-
-		<a target='_blank' href='https://www.reddit.com/submit?url=http://mysmile.nz'>
-		<img src='https://www.matthewb.id.au/social/reddit.png' alt='Reddit'style="width:20px;height:20px;float: right;" /></a>
-
-		<a target='_blank' href='https://twitter.com/intent/tweet?text=&url=http://mysmile.nz'>
-		<img src='https://www.matthewb.id.au/social/twitter.png' alt='Tweet' style="width:20px;height:20px;float: right;"/></a>
-	</p>
-    <div class="card-header" style="font-size: 30px;">
-      <ul class="nav nav-tabs card-header-tabs" style="font-size: 15px;">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">School Map</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="table.html">School Data</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="stats.html">Graphs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="links.html">Enroll Now</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="dentists.html">Dentist Map</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="video.html">Video & Info</a>
-        </li>
-
-      </ul>
-
-    </div>
-    <a href = "indexExcludingPrimary.html" class="btn btn-primary">Exclude Primary Schools</a>
-  </div>
-    
-    <div id="map"></div> 
-
-    <script>
-      var map;
-
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
-          center: new google.maps.LatLng(-35.728779, 174.306604),
-          mapTypeId: 'roadmap'
-        });
-
-        // Create a <script> tag and set the USGS URL as the source.
-        var script = document.createElement('script');
-        // This example uses a local copy of the GeoJSON stored at
-        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-        script.src = 'Real Data V6.json';
-        document.getElementsByTagName('head')[0].appendChild(script);
-        console.log("Feature:");
-
-        
+</main>
 
 
 
-        // map.data.setStyle(function(feature) {
-        //   console.log("Feature: ",feature);
-        //   var Size = feature.Total;
-        //   console.log("Roll: ",Size);
-          
-        //   {
-        //     icon: getCircle(Size)
-        //   };
-        // });
-        
-      }
 
 
-
-      function getCircle(Size) {
-        return {
-          path: google.maps.SymbolPath.CIRCLE,
-          fillColor: 'red',
-          fillOpacity: .2,
-          scale: Math.pow(2, Size) / 2,
-          strokeColor: 'white',
-          strokeWeight: .5
-        };
-      }
-
-      // Loop through the results array and place a marker for each
-      // set of coordinates.
-
-      
-      window.eqfeed_callback = function(results) {
-        var infoWindow = new google.maps.InfoWindow({
-        content: "test"
-      })
-        for (var i = 0; i < results.length; i++) {
-          var Latitude = results[i].Latitude;
-          var SchoolNames = results[i].Org_Name;
-          var Longitude = results[i].Longitude;
-          console.log(SchoolNames,Latitude,Longitude);
-
-          var Size = results[i].StudAll;
-          console.log("Roll: ",Size);
-          var PercentEnrolled = results[i].All_rate;
-          //var Scale = Size/ 50 ;
-          //var Scale = 10 ;
-          var ScaleMin = 3
-          var ScaleMax = 10
-          var SchoolMin = 0
-          var SchoolMax = 2000
-          var ScalePercent = (Size - SchoolMin)/(SchoolMax - Size)
-          var Scale = ScalePercent * (ScaleMax - SchoolMin) + ScaleMax
-          //var Scale =  PercentEnrolled *15;
-          //var Scale =  (100 - PercentEnrolled)/10 ;
-
-          // if (PercentEnrolled >= 0.80){
-          //   // Great schools get green
-          //   console.log("Green school");
-          //   var red = 0;
-          //   var green = 255;
-          //   var blue = 0;
-
-          // }
-          // else if (PercentEnrolled > 0.60) {
-          //   // Medium gets yellow
-          //   console.log("Yellow schools school");
-          //   var red = 255;
-          //   var green = 255;
-          //   var blue = 0;
-
-          // }
-          // else if (PercentEnrolled <= 0.60) {
-          //   // Bad schools get red
-          //   var red = 255;
-          //   var green = 0;
-          //   var blue = 0;
-          // }
-          
-          var blue = 0;
-          var red = Math.round(255-(PercentEnrolled*255));
-          var green = Math.round(PercentEnrolled*255);
-          var rgbString = "rgb("+red.toString()+","+green.toString()+"," + blue.toString() +")";
-          var latLng = new google.maps.LatLng(Latitude,Longitude);
-          var marker = new google.maps.Marker({
-            position: latLng,
-            map: map,
-            icon:{
-              path: google.maps.SymbolPath.CIRCLE,
-              fillColor: rgbString,
-              fillOpacity: .5,
-              scale: Scale,
-              strokeColor: 'white',
-              strokeWeight: .5
-            }
-          });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 
-          google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-                console.log("Marker clicked", i)
-                infoWindow.setContent(
-                  "<h4>"+results[i].Org_Name+" "+Math.round(results[i].All_rate*100)+"% </h4><p> Enrolled at dentist: "+results[i].ChildrenAll+"<br>"+"Student Population: "+results[i].StudAll+"<br>"+"Decile: "+results[i].Decile+"<br>Rank: "+results[i].Rank+" out of "+ 133+"</p>"
-
-                  );
-                infoWindow.open(map, marker);
-              }
-          })(marker, i));
-        }
-      }  
-      
-      
-    </script>
-    <script type="text/javascript">
-      
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVh2GtXct2lwsyjmP7ZyZleO4IueULqO4&callback=initMap">
-    </script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64669610-14"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-64669610-14');
-</script>
 <script type="text/javascript">
-    $(window).on('load',function(){
-        $('#disclamer').modal('show');
-    });
+    function wait(ms)
+{
+var d = new Date();
+var d2 = null;
+do { d2 = new Date(); }
+while(d2-d < ms);
+}
+    function LoginForm(){
+        var Password = document.getElementById("password").value;
+        if (Password == "Toothless"){
+
+            window.location = "homepage.html";
+            return false
+            
+        } else {
+            alert("Incorrect password!");
+            return false;
+        }
+        
+    }
 </script>
-  </body>
+</body>
 </html>

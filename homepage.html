@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" href="http://mysmile.nz/mysmile.ico" type="image/x-icon"/>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://mysmile.nz/mysmile.ico" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>My Smile</title>
     
@@ -25,22 +25,46 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
   </head>
   <body>
+
+<!-- Modal -->
+<!-- <div id="disclamer" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Disclaimer</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+        <p>Please do not use this visualization<br>It is for demonstration purposes only<br> <br> 
+        <i>Note: Might be buggy using Internet Explorer</i>
+      </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
   <div class="card text-center">
-    <a href="index.html"><img src="/my-smile-logo.png" height="100px" width="256px" align="left"></a>
-    <p style="position:absolute;right:10px;bottom:50px;">
-      <a target='_blank' href='https://www.facebook.com/share.php?u=http://mysmile.nz'>
-      <img src='https://www.matthewb.id.au/social/facebook.png' alt='Facebook' style="width:20px;height:20px;float: right;"/></a>
+    <a href="homepage.html"><img src="/my-smile-logo.png" height="100px" width="256px" align="left"></a>
+    <p style="position:absolute;right:10px;bottom:90px;">
+		<a target='_blank' href='https://www.facebook.com/share.php?u=http://mysmile.nz'>
+		<img src='https://www.matthewb.id.au/social/facebook.png' alt='Facebook' style="width:20px;height:20px;float: right;"/></a>
 
-      <a target='_blank' href='https://www.reddit.com/submit?url=http://mysmile.nz'>
-      <img src='https://www.matthewb.id.au/social/reddit.png' alt='Reddit'style="width:20px;height:20px;float: right;" /></a>
+		<a target='_blank' href='https://www.reddit.com/submit?url=http://mysmile.nz'>
+		<img src='https://www.matthewb.id.au/social/reddit.png' alt='Reddit'style="width:20px;height:20px;float: right;" /></a>
 
-      <a target='_blank' href='https://twitter.com/intent/tweet?text=&url=http://mysmile.nz'>
-      <img src='https://www.matthewb.id.au/social/twitter.png' alt='Tweet' style="width:20px;height:20px;float: right;"/></a>
-    </p>
+		<a target='_blank' href='https://twitter.com/intent/tweet?text=&url=http://mysmile.nz'>
+		<img src='https://www.matthewb.id.au/social/twitter.png' alt='Tweet' style="width:20px;height:20px;float: right;"/></a>
+	</p>
     <div class="card-header" style="font-size: 30px;">
       <ul class="nav nav-tabs card-header-tabs" style="font-size: 15px;">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">School Map</a>
+          <a class="nav-link active" href="homepage.html">School Map</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="table.html">School Data</a>
@@ -57,9 +81,11 @@
         <li class="nav-item">
           <a class="nav-link" href="video.html">Video & Info</a>
         </li>
+
       </ul>
+
     </div>
-    <a href = "index.html" class="btn btn-primary">Include Primary Schools</a>
+    <a href = "indexExcludingPrimary.html" class="btn btn-primary">Exclude Primary Schools</a>
   </div>
     
     <div id="map"></div> 
@@ -129,7 +155,6 @@
           var Size = results[i].StudAll;
           console.log("Roll: ",Size);
           var PercentEnrolled = results[i].All_rate;
-
           //var Scale = Size/ 50 ;
           //var Scale = 10 ;
           var ScaleMin = 3
@@ -151,7 +176,7 @@
           // }
           // else if (PercentEnrolled > 0.60) {
           //   // Medium gets yellow
-          //   console.log("Yellow school ");
+          //   console.log("Yellow schools school");
           //   var red = 255;
           //   var green = 255;
           //   var blue = 0;
@@ -169,8 +194,7 @@
           var green = Math.round(PercentEnrolled*255);
           var rgbString = "rgb("+red.toString()+","+green.toString()+"," + blue.toString() +")";
           var latLng = new google.maps.LatLng(Latitude,Longitude);
-          if (Number(results[i].Stud1418) > 0){
-            var marker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
             position: latLng,
             map: map,
             icon:{
@@ -194,11 +218,6 @@
                 infoWindow.open(map, marker);
               }
           })(marker, i));
-          }
-          
-
-
-          
         }
       }  
       
@@ -218,13 +237,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64669610-14"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-64669610-14');
+    gtag('config', 'UA-64669610-14');
 </script>
-
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#disclamer').modal('show');
+    });
+</script>
   </body>
 </html>
